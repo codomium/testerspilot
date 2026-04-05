@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TestersPilot — Account Deletion</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0A1628;
+      color: #FFFFFF;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 0;
+      border-bottom: 1px solid #1A3A5C;
+      margin-bottom: 32px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: #00E5FF;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #8A9BAE;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .card {
+      background-color: #0D1F38;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 24px;
+      border: 1px solid #1A3A5C;
+    }
+
+    .card h2 {
+      color: #00E5FF;
+      font-size: 18px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card h2::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 20px;
+      background-color: #00E5FF;
+      border-radius: 2px;
+    }
+
+    ol {
+      list-style: none;
+      counter-reset: steps;
+    }
+
+    ol li {
+      counter-increment: steps;
+      position: relative;
+      padding-left: 36px;
+      margin-bottom: 16px;
+      color: #E0E6ED;
+    }
+
+    ol li::before {
+      content: counter(steps);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 24px;
+      height: 24px;
+      background-color: #00E5FF;
+      color: #0A1628;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 12px;
+      color: #E0E6ED;
+    }
+
+    ul li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: #00E5FF;
+      font-weight: bold;
+    }
+
+    .warning-box {
+      background-color: rgba(255, 71, 87, 0.1);
+      border: 1px solid #FF4757;
+      border-radius: 12px;
+      padding: 16px;
+      margin-top: 20px;
+    }
+
+    .warning-box p {
+      color: #FF4757;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .info-box {
+      background-color: rgba(0, 229, 255, 0.1);
+      border: 1px solid #00E5FF;
+      border-radius: 12px;
+      padding: 16px;
+      margin-top: 20px;
+    }
+
+    .info-box p {
+      color: #00E5FF;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .contact-section {
+      text-align: center;
+      padding: 32px 0;
+      border-top: 1px solid #1A3A5C;
+      margin-top: 32px;
+    }
+
+    .contact-section h2 {
+      color: #00E5FF;
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+
+    .email {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .email:hover {
+      color: #00E5FF;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px 0;
+      color: #5A6B7E;
+      font-size: 12px;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 16px;
+      }
+
+      .card {
+        padding: 20px;
+      }
+
+      .logo {
+        font-size: 20px;
+      }
+
+      ol li {
+        padding-left: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">🚀 TestersPilot</div>
+      <div class="subtitle">Account Deletion</div>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>How to Delete Your Account</h2>
+        <ol>
+          <li>Open the TestersPilot app</li>
+          <li>Go to the Profile tab</li>
+          <li>Scroll to the bottom of your profile</li>
+          <li>Tap "Delete Account" (red button above Sign Out)</li>
+          <li>Tap "DELETE" to confirm</li>
+          <li>Re-authenticate with your Google account</li>
+          <li>Your account is permanently deleted immediately</li>
+        </ol>
+      </section>
+
+      <section class="card">
+        <h2>What Gets Deleted Immediately</h2>
+        <ul>
+          <li>Your profile (name, email, avatar)</li>
+          <li>All test sessions and testing history</li>
+          <li>All test logs and verification records</li>
+          <li>Your points, diamonds, and badge level</li>
+          <li>All apps you submitted for testing</li>
+          <li>Diamond transaction history</li>
+          <li>Your Google Sign-In account link</li>
+        </ul>
+        <div class="warning-box">
+          <p>⚠️ This action is permanent and cannot be undone. Your Firebase Auth account will be completely removed.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>What Is Retained (Up to 90 Days)</h2>
+        <p style="color: #E0E6ED; margin-bottom: 16px;">To prevent abuse, enforcement data is kept for 90 days:</p>
+        <ul>
+          <li>Ban and strike records (no personal identifiers except email)</li>
+          <li>Used only to prevent rule circumvention via re-registration</li>
+          <li>Automatically deleted after 90 days</li>
+        </ul>
+        <div class="info-box">
+          <p>ℹ️ If you re-register with the same email, your strikes and ban status will be restored to maintain platform integrity.</p>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <h2>Contact</h2>
+        <a href="mailto:support@testerspilot.app" class="email">📧 support@testerspilot.app</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>TestersPilot © 2025 — All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
